@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	id="WebApp_ID" version="4.0">
+	<display-name>LibraryManagementSystem</display-name>
+	<display-name>library</display-name>
+	<welcome-file-list>
+		<welcome-file>welcomelibrary.jsp</welcome-file>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+		<servlet-name>AdminLoginServlet</servlet-name>
+		<servlet-class>library.admin.servlet.AdminLoginServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>AdminLoginServlet</servlet-name>
+		<url-pattern>/web</url-pattern>
+	</servlet-mapping>
+
+
+
+	<servlet>
+		<servlet-name>AdminLoginServlet</servlet-name>
+		<servlet-class>library.admin.servlet.AdminLoginServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>AdminLoginServlet</servlet-name>
+		<url-pattern>/libraryadmin/AdminLoginServlet</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>RegisterAdminServlet</servlet-name>
+		<servlet-class>library.admin.servlet.RegisterAdminServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>RegisterAdminServlet</servlet-name>
+		<url-pattern>/libraryadmin/RegisterAdminServlet</url-pattern>
+	</servlet-mapping>
+
+
+
+	<servlet>
+		<servlet-name>UserLoginServlet</servlet-name>
+		<servlet-class>library.user.servlet.UserLoginServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>UserLoginServlet</servlet-name>
+		<url-pattern>/user/UserLoginServlet</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>RegisterUserServlet</servlet-name>
+		<servlet-class>library.user.servlet.RegisterUserServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>RegisterUserServlet</servlet-name>
+		<url-pattern>/user/RegisterUserServlet</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>SearchUserServlet</servlet-name>
+		<servlet-class>library.admin.servlet.SearchUserServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>SearchUserServlet</servlet-name>
+		<url-pattern>/libraryadmin/SearchUserServlet</url-pattern>
+	</servlet-mapping>
+
+
+
+
+	<servlet>
+		<servlet-name>SearchBookServlet</servlet-name>
+		<servlet-class>library.admin.servlet.SearchBookServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>SearchBookServlet</servlet-name>
+		<url-pattern>/libraryadmin/SearchBookServlet</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>AddNewBookServlet</servlet-name>
+		<servlet-class>library.admin.servlet.AddNewBookServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>AddNewBookServlet</servlet-name>
+		<url-pattern>/libraryadmin/AddNewBookServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>DeletBookServlet</servlet-name>
+		<servlet-class>library.admin.servlet.DeletBookServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>DeletBookServlet</servlet-name>
+		<url-pattern>/libraryadmin/DeletBookServlet</url-pattern>
+	</servlet-mapping>
+
+
+
+
+	<servlet>
+		<servlet-name>DeletUserServlet</servlet-name>
+		<servlet-class>library.admin.servlet.DeletUserServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>DeletUserServlet</servlet-name>
+		<url-pattern>/libraryadmin/DeletUserServlet</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>UpdateUserServlet</servlet-name>
+		<servlet-class>library.user.servlet.UpdateUserServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>UpdateUserServlet</servlet-name>
+		<url-pattern>/libraryadmin/UpdateUserServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>SearchBookServlet</servlet-name>
+		<servlet-class>library.admin.servlet.SearchBookServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>SearchBookServlet</servlet-name>
+		<url-pattern>/user/SearchBookServlet</url-pattern>
+	</servlet-mapping>
+		<servlet>
+		<servlet-name>ViewBookServlet</servlet-name>
+		<servlet-class>library.admin.servlet.ViewBookServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ViewBookServlet</servlet-name>
+		<url-pattern>/admin/ViewBookServlet</url-pattern>
+	</servlet-mapping>
+
+
+
+  <servlet>
+		<servlet-name>IssueBookServlet</servlet-name>
+		<servlet-class>library.admin.servlet.IssueBookServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>IssueBookServlet</servlet-name>
+		<url-pattern>/libraryadmin/IssueBookServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ViewIssuedBookServlet</servlet-name>
+		<servlet-class>library.admin.servlet.ViewIssuedBookServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ViewIssuedBookServlet</servlet-name>
+		<url-pattern>/libraryadmin/ViewIssuedBookServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ReturnBookServlet</servlet-name>
+		<servlet-class>library.admin.servlet.ReturnBookServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ReturnBookServlet</servlet-name>
+		<url-pattern>/libraryadmin/ReturnBookServlet</url-pattern>
+	</servlet-mapping>
+	
+
+
+</web-app>

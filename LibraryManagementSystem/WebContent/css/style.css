@@ -1,0 +1,31 @@
+main{
+
+margin-top:2%;
+}
+
+body {
+  background-image: url('img/lib.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+
+
+
+	
+
+.card-body{
+	
+	border: 1px  grey;
+    broder-width:1px:
+
+
+padding:10px;
+}
+.btn btn-primary{
+	text-align:center;
+}
+.btn{
+	text-align:right;
+}
