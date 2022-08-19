@@ -1,0 +1,49 @@
+<div class="container mt-4">
+    <div class="row">
+    <div class="col">
+        <p class="h3 fw-bold text-primary"><i class="fa fa-eye"></i> View Contact</p>
+        <p class="fst-italic">This is dummy data 
+            Forget about huge investments on your in-house content
+            writer and outsource content writing. Get your corporate needs
+             covered by us in 42 types of content writing services available 
+             for businesses around the globe.</p>
+    </div>
+    </div>
+</div>
+<!--Condition based Loading -->
+
+<div *ngIf="loading">
+    <app-spinner></app-spinner>
+
+</div>
+
+
+<!----------------view Contact details =------------------>
+
+<div  *ngIf="!loading && isNotEmpty()" class="container">
+    <div class="row align-items-center">
+        <div class="col-sm-3" >
+            <img [src]="contact.photo" alt="user"
+            class="contact-img-details">
+        </div>
+        <div class="col-sm-5 mt-3" >
+            <ul class="list-group">
+                <li class="list-group-item list-group-item-success">Name: <span class="fw-bold">{{contact.name}}</span></li>
+                <li class="list-group-item list-group-item-success">Email: <span class="fw-bold">{{contact.email}}</span></li>
+                <li class="list-group-item list-group-item-success">Mobile: <span class="fw-bold">{{contact.mobile}}</span></li>
+                <li class="list-group-item list-group-item-success">Company: <span class="fw-bold">{{contact.company}}</span></li>
+                <li class="list-group-item list-group-item-success">Title: <span class="fw-bold">{{contact.title}}</span></li>
+             <!-- <li class="list-group-item list-group-item-success">Group Name: <span class="fw-bold">{{group.name}}</span></li>   
+    -->
+            </ul>
+
+        </div>
+    </div>
+    <!-- <pre>{{groups| json}}</pre>  -->
+    <div class="row mt-2">
+        <div class="col">
+
+        <a routerLink="/" class="btn btn-warning"><i class="fa fa-arrow-alt-circle-left">&nbsp;</i> Go Back</a>
+        </div>
+    </div>
+</div>

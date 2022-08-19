@@ -1,0 +1,72 @@
+
+
+
+-------------------------create project------------------------------------------------------------------------------------------------
+step 1--> ng new  projectName  and open project into vscode use command-->   code . 
+
+step 2-->Install bootstrap and fontawesome using 
+	 npm i bootstrap/npm i @fortawesome/fontawesome-free
+
+step 3--><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> index.html
+
+step 4-->configure CSS & Fontawesome in angular.json
+
+step 5--> Configure google fonts==>use this link,
+	  https://fonts.google.com/specimen/Fredoka
+
+
+step 6-->Test bootstrap  & font awesome working or not
+	 use command-->ng s -o or ng serve
+	
+step 7-->create component  using command -> ng g c componentName
+
+
+step 8-> create services using command ng g s serviceName
+
+
+
+-------------------------set up done=-------------------------------------------------------------------------------------------------------
+
+start coding--
+
+1--> Create modell
+
+2--> configure route
+
+3-->create page not found
+
+4-->design page not found
+
+5--> design navbar component
+
+6-->design contact manager page Component
+
+7--> design add contactr page component
+
+8-->design edit contact page
+
+9--> view page
+
+
+
+
+-----------------start wok on backend---------------
+1-->open terminal
+2-->npm json server
+3-->create db.json'
+4--> package file config
+5--> run db.json
+ go in server path run --->  npm start
+
+
+------------------start woking in services----------------------
+
+1-->import HttpClientModule
+2-->view all contact >> GET http://localhost:4000/contacts
+3-->view single contact  >> Post http://localhost:4000/contacts/:contactId
+4-->create contact...http://localhost:4000/contacts
+5-->update contact..http://localhost:4000/contacts/:contactId
+6-->delete contact  http://localhost:4000/contacts/:contactid
+
+show contact data in contact manager 
+			

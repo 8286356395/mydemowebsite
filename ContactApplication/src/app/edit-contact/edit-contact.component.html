@@ -1,0 +1,58 @@
+
+<div class="container mt-4">
+    <div class="row">
+    <div class="col">
+        <p class="h3 fw-bold text-primary"><i class="
+            fa fa-pen"></i>  Edit Contact</p>
+        <p class="fst-italic">This is dummy data 
+            Forget about huge investments on your in-house content
+            writer and outsource content writing. Get your corporate needs
+             covered by us in 42 types of content writing services available 
+             for businesses around the globe.</p>
+    </div>
+    </div>
+</div>
+<!-- <pre>{{contact | json}}</pre> -->
+
+<!------------------ Edit Contact Form--------------->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+            <form (submit)="submitUpdate()">
+                <div class="mb-2">
+                    <input [(ngModel)]="contact.name" placeholder="Name" [value]="contact.name" name="name" type="text"  class="form-control" >
+                </div>
+                <div class="mb-2">
+                    <input [(ngModel)]="contact.photo" placeholder="Name" [value]="contact.photo" name="photo"  type="text"  class="form-control" placeholder="Photo url">
+                </div>
+                <div class="mb-2">
+                    <input [(ngModel)]="contact.email" placeholder="Name" [value]="contact.email" name="email"  type="text"  class="form-control" placeholder="Email Id">
+                </div>
+                <div class="mb-2">
+                    <input [(ngModel)]="contact.mobile" placeholder="Name" [value]="contact.mobile" name="mobile"  type="text"  class="form-control" placeholder="Mobile No">
+                </div>
+                <div class="mb-2">
+                    <input [(ngModel)]="contact.company" placeholder="Name" [value]="contact.company" name="company"  type="text"  class="form-control" placeholder="Comapny">
+                </div>
+                <div class="mb-2">
+                    <input [(ngModel)]="contact.title" placeholder="Name" [value]="contact.title" name="title"  type="text"  class="form-control" placeholder="Title">
+                </div>
+               
+                <div class="mb-2">
+                    <select  [(ngModel)]="contact.groupId" placeholder="Name" [value]="contact.groupId" name="groupId"  class="form-control" ><option value="">Select a Group</option>
+                    <option [value]="group.id" *ngFor="let group of group">{{group.name}}</option></select>
+                </div>
+                <div class="mb-2">
+                    <input type="submit"  class="btn btn-primary" value="Update">
+                    <a routerLink="/" class="btn btn-warning ms-2">Close</a>
+                </div>
+                
+            </form>
+        </div>
+        <div class="col-sm-4">
+            <img  [src]="contact.photo"  alt="user"
+            class="contact-img">
+        </div>
+    </div>
+</div>
+
